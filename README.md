@@ -32,37 +32,6 @@
 ---
 
 ## 🗂️ Folder Structure
-BOOKBUDDY/
-├── backend/
-│   ├── middleware/
-│   │   └── authenticateToken.js
-│   ├── node_modules/
-│   ├── prisma/
-│   │   ├── migrations/
-│   │   └── schema.prisma
-│   ├── routes/
-│   │   ├── books.js
-│   │   ├── reviews.js
-│   │   └── user.js
-│   ├── .env
-│   ├── .gitignore
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── seedBook.js
-│   └── server.js
-├── frontend/
-│   ├── node_modules/
-│   ├── public/
-│   │   └── index.html
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── App.js
-│   │   └── index.js
-│   ├── .gitignore
-│   ├── package-lock.json
-│   ├── package.json
-│   └── README.md
-
+<pre lang="markdown"> ```plaintext BOOKBUDDY/ ├── backend/ │ ├── middleware/ │ │ └── authenticateToken.js │ ├── node_modules/ │ ├── prisma/ │ │ ├── migrations/ │ │ └── schema.prisma │ ├── routes/ │ │ ├── books.js │ │ ├── reviews.js │ │ └── user.js │ ├── .env │ ├── .gitignore │ ├── package-lock.json │ ├── package.json │ ├── seedBook.js │ └── server.js ├── frontend/ │ ├── node_modules/ │ ├── public/ │ │ └── index.html │ ├── src/ │ │ ├── components/ │ │ ├── pages/ │ │ ├── App.js │ │ └── index.js │ ├── .gitignore │ ├── package-lock.json │ ├── package.json │ └── README.md ``` </pre>
 
 
