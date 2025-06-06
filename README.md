@@ -8,7 +8,7 @@
 
 - 🧾 Register and Login using JWT-based Authentication
 - 📖 Add, Edit, and Delete Books
-- ✍️ Leave Reviews with Ratings
+- ✍️ Leave,Edit and Delete Reviews with Ratings
 - 🔎 Search & Pagination Support
 - 🧑‍💻 Profile page with analysis of books which are finished reading
 - 📊 API structured with REST principles
