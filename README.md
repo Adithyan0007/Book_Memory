@@ -66,3 +66,6 @@ BOOKBUDDY/
 │   └── README.md
 ```
 
+## Disclaimer
+This project is created solely for skill showcasing and learning purposes. It is not intended for production use or as a commercial application.
+
