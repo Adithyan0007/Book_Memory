@@ -10,7 +10,7 @@ const prisma = new PrismaClient();
 // Middleware to parse JSON request bodies
 app.use(
   cors({
-    origin: "http://localhost:5173", // allow only Vite frontend
+    origin: "https://bookmemory.netlify.app", // allow only Vite frontend
     credentials: true,
   })
 );
