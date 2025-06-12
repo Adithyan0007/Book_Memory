@@ -21,11 +21,14 @@ function MyReviews() {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await axios.get("http://localhost:4000/reviews/", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
+        const res = await axios.get(
+          "https://book-memory.onrender.com/reviews/",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        );
 
         setReviews(res.data);
       } catch (err) {
@@ -46,7 +49,7 @@ function MyReviews() {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.delete(
-        `http://localhost:4000/reviews/${reviewId}`,
+        `https://book-memory.onrender.com/reviews/${reviewId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -71,7 +74,7 @@ function MyReviews() {
   ) => {
     const token = localStorage.getItem("token");
     const res = await axios.post(
-      `http://localhost:4000/reviews`,
+      `https://book-memory.onrender.com/reviews`,
       {
         rating: parseInt(rating),
         comment,

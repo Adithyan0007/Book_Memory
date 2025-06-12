@@ -22,18 +22,18 @@ model Book {
   author      String
   description String?
   imageUrl    String?
-  reviews     Review[]
+  reviews     Review[]  // No onDelete here
 }
 
 model Review {
   id        Int      @id @default(autoincrement())
   rating    Int
   comment   String?
-  book      Book     @relation(fields: [bookId], references: [id])
+  book      Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
   bookId    Int
   user      User     @relation(fields: [userId], references: [id])
   userId    Int
   createdAt DateTime @default(now())
-  @@unique([userId, bookId]) 
 
+  @@unique([userId, bookId])
 }

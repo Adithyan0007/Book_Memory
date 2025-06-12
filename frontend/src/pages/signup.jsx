@@ -20,7 +20,7 @@ function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:4000/users/add", {
+      await axios.post("https://book-memory.onrender.com/users/add", {
         name,
         email,
         password,

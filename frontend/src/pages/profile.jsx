@@ -11,9 +11,12 @@ function Profile() {
     const fetchProfile = async () => {
       const token = localStorage.getItem("token");
       try {
-        const res = await axios.get("http://localhost:4000/users/profile", {
-          headers: { Authorization: `Bearer ${token}` },
-        });
+        const res = await axios.get(
+          "https://book-memory.onrender.com/users/profile",
+          {
+            headers: { Authorization: `Bearer ${token}` },
+          }
+        );
         setUser(res.data);
       } catch (err) {
         console.error("Error fetching profile:", err);
